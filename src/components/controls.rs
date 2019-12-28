@@ -66,6 +66,9 @@ impl Renderable<Controls> for Controls {
                     <button onclick=|_| Msg::ButtonPressed(crate_msg::SwitchRoom(t)),>
                         {&format!("Move to {}", target)}
                     </button>
+                    <button onclick=|_| Msg::ButtonPressed(crate_msg::ShootArrow(t)),>
+                        {&format!("Shoot {}", target)}
+                    </button>
                 </span>
             }
         };
